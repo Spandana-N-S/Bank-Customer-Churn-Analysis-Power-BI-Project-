@@ -6,9 +6,6 @@ CHURN TREND:
 CHURN BY CUSTOMER SEGMENT:
 *PIE CHARTS: this is likely represent churn rates for different customer segments(e.g., by region, product usage,demographics, etc
 
-CHURN BY MONTH:
-*BAR CHART: this shows churn rates for each month.
-
 IMPROVE CUSTOMER EXPERIENCE:
 *continuously working on improving customer experience across all touchpoints helps in enhancing product faetures, or improving customer service.
 
