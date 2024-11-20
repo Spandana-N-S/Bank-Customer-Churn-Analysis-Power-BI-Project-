@@ -10,6 +10,34 @@ DATASET -
 
 This dataset contains 10,000 rows and 12 columns namely; Customer ID, credit score, country, gender, age, tenure, balance, products, credit card (1 for yes and 0 for no), active member (1 for yes and 0 for no), estimated salary and churn (1 for yes and 0 for no).
 
+Insights:
+
+1) Overall Statistics:
+
+a.Total Customers: 10,000
+b.Churned Customers: 2,037
+c.Overall Churn Rate: 20.4%
+
+2) Geographical Insights:
+a.Germany: Highest churn rate at 32.4%
+b.Spain: Churn rate of 16.7%
+c.France: Churn rate of 16.2%
+
+3) Demographic Insights:
+a.Gender: Female customers have a higher churn rate compared to male customers.
+b.Customer Status: Churn is more prevalent among customers with an active status and those who own credit cards.
+c.Product Preference: Product 1 has the highest number of churned customers.
+
+4) Age Group Insights:
+Age 51 - 60: Highest churn rate at 56%
+
+5) Account Balance Insights:
+Balance Range 1K - 10K: 100% churn rate
+
+6) Credit Score Insights:
+Credit Score <= 400: 100% churn rate
+
+
 DATA COLLECTION AND PREPARATION - 
 
 I connect to, clean, and transform the raw data in Power Query to make it ideal and ready for data modeling and analysis. I import the data locally as I have already downloaded it.
