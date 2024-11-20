@@ -1,8 +1,12 @@
 Bank Churn Analysis
 
+
+
 Introduction-
 
 Customer Churn (or customer attrition) refers to the rate at which customers discontinue their association with a business during a specified timeframe. In simpler terms, it quantifies the loss of customers previously engaged with a company’s products or services. Companies and businesses need to know why customers are churning to implement measures to sustain or keep the customers satisfied enough to stay. This project dives into a customer churn dataset from ABC multinational bank to unveil hidden insights and identify trends to help business leaders make data-driven decisions and not just guesswork.
+
+
 
 Dataset-
 
@@ -14,6 +18,8 @@ I connect to, clean, and transform the raw data in Power Query to make it ideal 
 
 Since the values in the ‘estimated salary’ column are estimated, I removed that column because it is not relevant to this analysis. I changed the data types of some columns to fit the values in the column perfectly. I renamed some columns for clearer understanding. In the ‘Churn’, ‘Active’ and ‘Credit Card’ columns (1 for yes and 0 for no), I changed the values in those columns, replacing ‘1’ with ‘Churned’ and ‘0’ with ‘Not churned’ under the ‘Churn’ column, ‘1’ for ‘Active’ and ‘0’ for ‘Inactive’ under the ‘Active’ column( which I later changed column name to ‘Activity Status’, also replaced ‘1’ with ‘Owned’ and ‘0’ with ‘Not owned’ under the ‘Credit card’ column ( which I later renamed as ‘Credit card status’). Due to the huge range of values in the ‘Balance’ and ‘Credit Score’ columns, I inserted columns where I broke them down into ranges with the help of the ‘conditional column’ tab. I inserted an ‘Age group’ Column for age ranges.
 
+
+
 Data Modelling-
 
 After inserting the columns with ranges(Age groups, Acct Balance groups, and Credit score groups) , values in these columns are impossible to sort properly whether in ascending or descending order.
@@ -21,6 +27,8 @@ After inserting the columns with ranges(Age groups, Acct Balance groups, and Cre
 So I created a new table that contains the range-based column, I got rid of duplicates to help get the distinct values of the column and added a conditional column which I filled with whole numbers based on the arrangements of the ranges.
 
 I did this for the ‘Age Groups’, ‘Acct Balance’, and ‘Credit Score’ columns. This will help us to sort our visualizations appropriately when working on these columns. After this, I click on ‘close and apply’ to apply these changes to the data and load it from Power Query into Power BI for analysis and visualization.
+
+
 
 Creating Measures Using DAX-
 
@@ -30,6 +38,8 @@ Then I calculated for the number of churned customers (customers lost) with the 
 
 With the help of these two measures, I go ahead to calculate for the Churned rate, which is the rate at which we lose customers or the rate at which customers leave. I do this by dividing the number of customers lost by the number of customers. Churned rate = 'Customer Churn Data'[Customers Lost] / 'Customer Churn Data'[Customers]
 
+
+
 Data Visualization-
 
 First, I visualized customers, customers lost, and churned rate on cards. I then went ahead to insert doughnut charts for customers by gender, customers by activity status, customers by country, customers by credit card status, and the customers by product.
@@ -37,6 +47,8 @@ First, I visualized customers, customers lost, and churned rate on cards. I then
 I then went ahead to insert a line and clustered column chart which visualizes the customers by age group in column bars, and churned rate by age group on a line chart all in one. I did same for customers and churned rate by credit scores and then customers and churned rate by account balance.
 
 I then inserted a slicer for churn status and a gauge chart for churned rate.
+
+
 
 Insights and Recommendations-
 
