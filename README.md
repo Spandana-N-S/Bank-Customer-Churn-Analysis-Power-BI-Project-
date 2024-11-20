@@ -4,6 +4,8 @@ INTRODUCTION -
 
 Customer Churn (or customer attrition) refers to the rate at which customers discontinue their association with a business during a specified timeframe. In simpler terms, it quantifies the loss of customers previously engaged with a company’s products or services. Companies and businesses need to know why customers are churning to implement measures to sustain or keep the customers satisfied enough to stay. This project dives into a customer churn dataset from ABC multinational bank to unveil hidden insights and identify trends to help business leaders make data-driven decisions and not just guesswork.
 
+In today's highly competitive banking sector, retaining customers is essential for sustained success. Churn analysis is a crucial technique used to understand customer attrition and its underlying causes. By examining customer data, we can identify patterns and trends that lead to customer departures. This understanding allows the bank to implement targeted strategies to enhance customer satisfaction and loyalty, ultimately reducing churn rates. Customer churn refers to the percentage of customers a business loses over a specific period. For example, if a bank starts with 100 customers and loses 10 during the month, the churn rate for that period is 10%.
+
 DATASET - 
 
 This dataset contains 10,000 rows and 12 columns namely; Customer ID, credit score, country, gender, age, tenure, balance, products, credit card (1 for yes and 0 for no), active member (1 for yes and 0 for no), estimated salary and churn (1 for yes and 0 for no).
