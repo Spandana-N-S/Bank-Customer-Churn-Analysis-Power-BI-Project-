@@ -1,0 +1,31 @@
+1. data set : 
+customer_id = Id of the customer
+credit_score = CBIL of the customer
+country = country of the customer
+gender = gender of the customer (Male or Female)
+age = age of the customer
+tenure = Number of years customer joined with the bank
+balance = account balance
+product_number = product catagrasied by number
+credit_card = weather customer have credit card(1) or not(0)
+active_member = 1(Active customer), 0(Inactive customer)
+estimated_salary = salary of the customer
+churn = weather customers leave the bank or not. 1 Churned or 0 not churned.
+
+2. data transformation
+Use first row as a header.
+Remove useless column like estimated salary in this case.
+Rename columns, so that it will show clearly when we add charts.
+Prepare data types.
+Add column from example option and make new column Products Prod 1, Prod 2...etc.
+Replace credit Card Status value where 1 as Owned or 0 as not owned.
+Replace Activity Status value where 1 as Active or 0 as Inactive.
+Add conditional Columns like Age Groups, Credit Scores, Account Balance.
+Go on report section and select customer table right click and click create measure
+create measure like number of customer(Customer), Customer lost, chruned rate.
+Data Modeling - Create Queries to model your data for Analysis and Visualisation
+Model View - Review and edit relationships
+Data Analysis  - Create measures using DAX
+Data Visualisation - Choosing & formatting the visual elements
+Enhance the report - using & customising Themes
+Save & Publish report to Power BI Service
